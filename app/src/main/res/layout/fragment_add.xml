@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_shadow_end_color"
+    android:gravity="center"
+    tools:context=".views.add.AddFragment">
+
+    <EditText
+        android:id="@+id/inputDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/colorMultiSelectHighlight"
+        android:hint="@string/add_fragment_description_hint"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutRadioGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputDescription"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupPriority"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="3"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radioHighPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/add_fragment_priority_high" />
+
+            <RadioButton
+                android:id="@+id/radioMediumPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/add_fragment_priority_medium" />
+
+            <RadioButton
+                android:id="@+id/radioLowPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/add_fragment_priority_low" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="2"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radioCategoryWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fragment_category_work" />
+
+            <RadioButton
+                android:id="@+id/radioCategoryStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fragment_category_study" />
+
+            <RadioButton
+                android:id="@+id/radioCategoryShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fragment_category_shopping" />
+
+            <RadioButton
+                android:id="@+id/radioCategoryLeisure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fragment_category_leisure" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutRadioGroups"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/add_fragment_add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</RelativeLayout>
