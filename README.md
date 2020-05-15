@@ -1,2 +1,2 @@
 # Demo MyToDo
-![demo](./doc/img/demo.gif)
+![demo](app preview.gif)
